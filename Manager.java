@@ -8,4 +8,8 @@ public class Manager extends Employee {
  public boolean startSession(String keyword) {
   return keyword == "Alura";
  }
+
+ public double getBonus() {
+  return super.getSalary();
+ }
 }
