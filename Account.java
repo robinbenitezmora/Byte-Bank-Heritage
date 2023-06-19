@@ -29,7 +29,7 @@ public class Account {
 
  public boolean transfer(double value, Account account) {
   if (this.balance >= value) {
-   this.balance -= value;
+   this.withdraw(value);
    account.deposit(value);
    return true;
   }

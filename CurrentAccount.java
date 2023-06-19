@@ -3,4 +3,10 @@ public class CurrentAccount extends Account {
   super(agency, number);
  }
 
+ @Override
+ public boolean withdraw(double value) {
+  double valueToWithdraw = value + 0.2;
+  return super.withdraw(valueToWithdraw);
+ }
+
 }
