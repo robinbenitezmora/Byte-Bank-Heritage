@@ -10,6 +10,6 @@ public class Manager extends Employee {
  }
 
  public double getBonus() {
-  return super.getBonus() + getSalary();
+  return super.getSalary() + this.getSalary() * 0.05;
  }
 }
