@@ -1,16 +1,12 @@
 public class Administrator extends Employee {
- private int numberOfSubordinates;
+ private String password;
 
- public Administrator() {
-
+ public void setPassword(String password) {
+  this.password = password;
  }
 
- public int getNumberOfSubordinates() {
-  return numberOfSubordinates;
- }
-
- public void setNumberOfSubordinates(int numberOfSubordinates) {
-  this.numberOfSubordinates = numberOfSubordinates;
+ public boolean authenticate(String password) {
+  return password == this.password;
  }
 
  @Override
