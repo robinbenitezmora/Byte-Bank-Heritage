@@ -6,7 +6,11 @@ public class Administrator extends Employee implements Authenticable {
  }
 
  public boolean authenticate(String password) {
-  return password == this.password;
+  if (this.password == password) {
+   return true;
+  }
+  return false;
+
  }
 
  @Override

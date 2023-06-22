@@ -2,6 +2,7 @@ public class Client implements Authenticable {
  private String name;
  private String identityNumber;
  private String profession;
+ private String password;
 
  public String getName() {
   return name;
@@ -29,12 +30,15 @@ public class Client implements Authenticable {
 
  @Override
  public void setPassword(String password) {
-
+  this.password = password;
  }
 
  @Override
  public boolean authenticate(String password) {
-  // TODO Auto-generated method stub
-  throw new UnsupportedOperationException("Unimplemented method 'authenticate'");
+  if (this.password == password) {
+   return true;
+  } else {
+   return false;
+  }
  }
 }
