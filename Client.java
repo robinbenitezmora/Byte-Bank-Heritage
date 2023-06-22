@@ -1,4 +1,4 @@
-public class Client {
+public class Client implements Authenticable {
  private String name;
  private String identityNumber;
  private String profession;
@@ -25,5 +25,16 @@ public class Client {
 
  public void setProfession(String profession) {
   this.profession = profession;
+ }
+
+ @Override
+ public void setPassword(String password) {
+
+ }
+
+ @Override
+ public boolean authenticate(String password) {
+  // TODO Auto-generated method stub
+  throw new UnsupportedOperationException("Unimplemented method 'authenticate'");
  }
 }
