@@ -1,7 +1,8 @@
-public class Client {
+public class Client implements Authenticable {
  private String name;
  private String identityNumber;
  private String profession;
+ private String password;
 
  public String getName() {
   return name;
@@ -25,5 +26,19 @@ public class Client {
 
  public void setProfession(String profession) {
   this.profession = profession;
+ }
+
+ @Override
+ public void setPassword(String password) {
+  this.password = password;
+ }
+
+ @Override
+ public boolean authenticate(String password) {
+  if (this.password == password) {
+   return true;
+  } else {
+   return false;
+  }
  }
 }
