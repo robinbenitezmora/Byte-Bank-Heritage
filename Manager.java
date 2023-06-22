@@ -1,4 +1,4 @@
-public class Manager extends Employee {
+public class Manager implements Authenticable {
  private String keyword;
 
  public void setKeyword(String keyword) {
@@ -10,6 +10,22 @@ public class Manager extends Employee {
  }
 
  public double getBonus() {
-  return super.getSalary() + this.getSalary() * 0.05;
+  return this.getSalary() * 0.05;
+ }
+
+ private double getSalary() {
+  return 0;
+ }
+
+ @Override
+ public void setPassword(String password) {
+  // TODO Auto-generated method stub
+  throw new UnsupportedOperationException("Unimplemented method 'setPassword'");
+ }
+
+ @Override
+ public boolean authenticate(String password) {
+  // TODO Auto-generated method stub
+  throw new UnsupportedOperationException("Unimplemented method 'authenticate'");
  }
 }
