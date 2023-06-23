@@ -1,11 +1,14 @@
-public class CurrentAccount extends Account {
- public CurrentAccount(int agency, int number) {
-  super(agency, number);
- }
+public class CurrentAccount implements Tributation {
 
  @Override
- public void deposit(double value) {
-  this.balance += value;
+ public double getTributationValue() {
+  return super.getBalance() * 0.01;
  }
 
+ public void deposit(int i) {
+ }
+
+ public char[] getBalance() {
+  return null;
+ }
 }

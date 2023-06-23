@@ -1,12 +1,16 @@
 public class UsefulAuthentication {
- private String password;
+ private int password;
 
- public boolean authenticate(String password) {
-  return this.password.equals(password);
+ public void setPassword(int password) {
+  this.password = password;
  }
 
- public void setPassword(String password) {
-  this.password = password;
+ public boolean authenticate(int password) {
+  if (this.password == password) {
+   return true;
+  } else {
+   return false;
+  }
  }
 
 }
