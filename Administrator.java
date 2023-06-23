@@ -1,29 +1,17 @@
 public class Administrator extends Employee implements Authenticable {
- private String password;
+ private UsefulAuthentication authenticator;
 
- public Administrator(String name, String identityNumber, String profession, String password) {
-  super();
-  this.password = password;
- }
-
- public void setPassword(String password) {
-  this.password = password;
- }
-
- public boolean authenticate(String password) {
-  if (this.password == password) {
-   return true;
-  }
-  return false;
-
+ public Administrator() {
+  this.authenticator = new UsefulAuthentication();
  }
 
  @Override
- public double getBonus() {
-  return this.getSalary() * 0.2;
+ public void setPassword(int password) {
+  this.authenticator.setPassword(password);
  }
 
- public double getSalary() {
-  return 0;
+ @Override
+ public boolean authenticate(int password) {
+  return this.authenticator.authenticate(password);
  }
 }
