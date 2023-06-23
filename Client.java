@@ -4,6 +4,13 @@ public class Client implements Authenticable {
  private String profession;
  private String password;
 
+ public Client(String name, String identityNumber, String profession, String password) {
+  this.name = name;
+  this.identityNumber = identityNumber;
+  this.profession = profession;
+  this.password = password;
+ }
+
  public String getName() {
   return name;
  }

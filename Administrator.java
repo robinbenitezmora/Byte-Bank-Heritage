@@ -1,6 +1,11 @@
 public class Administrator extends Employee implements Authenticable {
  private String password;
 
+ public Administrator(String name, String identityNumber, String profession, String password) {
+  super();
+  this.password = password;
+ }
+
  public void setPassword(String password) {
   this.password = password;
  }
