@@ -1,3 +1,5 @@
+package model;
+
 public class TaxCalculator {
  private double totalTributation;
 
