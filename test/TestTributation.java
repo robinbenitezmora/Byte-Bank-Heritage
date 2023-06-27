@@ -1,3 +1,9 @@
+import CurrentAccount;
+import LifeSecure;
+import TaxCalculator;
+
+package test;
+
 public class TestTributation {
 
  public static void main(String[] args) {

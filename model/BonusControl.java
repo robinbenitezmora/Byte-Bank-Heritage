@@ -1,3 +1,5 @@
+package model;
+
 public class BonusControl {
  private double sum;
 

@@ -1,9 +1,11 @@
+package test;
+
 public class TestBonusControl {
  public static void main(String[] args) {
-  Employee diego = new Accountant();
+  test.Accountant diego = new Accountant();
   diego.setSalary(2000);
 
-  Manager maria = new Manager();
+  model.Manager maria = new model.Manager();
   maria.setSalary(5000);
 
   Accountant joao = new Accountant();
