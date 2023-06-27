@@ -1,3 +1,9 @@
+import Accountant;
+import Employee;
+import Manager;
+
+package test;
+
 public class TestBonusControl {
  public static void main(String[] args) {
   Employee diego = new Accountant();

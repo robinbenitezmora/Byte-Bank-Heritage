@@ -1,3 +1,8 @@
+import Accountant;
+import Employee;
+
+package test;
+
 public class TestEmployee {
  public static void main(String[] args) {
   Employee employee = new Accountant();

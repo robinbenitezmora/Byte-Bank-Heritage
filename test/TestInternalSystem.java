@@ -1,3 +1,8 @@
+import InternalSystem;
+import Manager;
+
+package test;
+
 public class TestInternalSystem {
  public static void main(String[] args) {
   InternalSystem internalSystem = new InternalSystem();

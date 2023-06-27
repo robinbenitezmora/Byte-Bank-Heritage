@@ -1,3 +1,7 @@
+import Manager;
+
+package test;
+
 public class TestManager {
  public static void main(String[] args) {
   Manager manager = new Manager();

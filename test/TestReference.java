@@ -1,3 +1,8 @@
+import BonusControl;
+import Manager;
+
+package test;
+
 public class TestReference {
  public static void main(String[] args) {
   Manager maria = new Manager();
