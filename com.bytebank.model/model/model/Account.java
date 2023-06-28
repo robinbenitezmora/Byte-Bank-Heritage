@@ -1,4 +1,4 @@
-package model;
+package com.bytebank.model;
 
 public abstract class Account {
  protected double balance;
